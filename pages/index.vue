@@ -21,13 +21,14 @@ export default {
 </script>
 
 <style>
+  html {
+    height: 100%;
+  }
   a {
     color: white !important;
   }
   body {
     color: white;
     background: linear-gradient(#201866, #000000);
-    background-repeat: repeat-x;
-    height: 1920px;
   }
 </style>
