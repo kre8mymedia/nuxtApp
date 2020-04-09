@@ -4,7 +4,7 @@
     <div class="pt-5 text-center container">
       <h1>About Page</h1>
       <p>This is the about page, this app is a sample app that has been preconfigured with Bootstrap CDN!</p>
-      <img class="mt-5" height="400px" src="https://siasky.net/PADdiPhorWOZaLkVmbIsjF0lW1DRR7fueYEJBqMiK-woUA" alt="Adaptive Tech Logo">
+      <img class="mt-5" height="300px" src="https://siasky.net/PADdiPhorWOZaLkVmbIsjF0lW1DRR7fueYEJBqMiK-woUA" alt="Adaptive Tech Logo">
     </div>
   </div>
 </template>
