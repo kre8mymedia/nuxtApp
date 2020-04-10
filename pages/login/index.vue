@@ -4,11 +4,11 @@
     <div class="row justify-content-center">
       <div class="col-sm-6">
         <div class="text-center">
-          <img class="mt-1" height="300px" src="~/assets/black-logo.png" alt="Adaptive Tech Logo">
+          <img height="300px" src="~/assets/black-logo.png" alt="Adaptive Tech Logo">
           <h1>Login Page</h1>
           <p>Please sign in below</p>
         </div>
-        <div class="pt-2 pb-2 container">
+        <div class="pt-1 pb-2 container">
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
