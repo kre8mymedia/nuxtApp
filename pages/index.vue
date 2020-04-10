@@ -21,9 +21,12 @@ export default {
 </script>
 
 <style>
+  /* STRETCH TO WINDOW  */
   html {
     height: 100%;
   }
+
+  /* FADE IN BODY  */
   a {
     color: white !important;
   }
@@ -44,4 +47,14 @@ export default {
       opacity: 1; 
      } 
   }
+
+  /* NAVBAR LOGIN  */
+  .dropdown-item {
+    color: black !important;
+  }
+  .dropdown-item:hover {
+    background: #026978;
+    color: white !important;
+  }
+
 </style>

@@ -13,25 +13,52 @@
         <li class="nav-item">
           <a class="nav-link" href="/about">About</a>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li> -->
+        
         <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li> -->
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <ul v-if="isLoggedIn == false" class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a v-on:click="toggleLogin" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/register">Register</a>
+        </li>
+      </ul>
+      <ul v-else class="navbar-nav ml-auto">
+        <li style="border-radius: 3px;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ryan.eggleston@tmgcore.com
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/account">Account</a>
+            <a class="dropdown-item" href="/records">Records</a>
+            <div class="dropdown-divider"></div>
+            <a v-on:click="toggleLogin" class="dropdown-item">Logout</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isLoggedIn: true
+    }
+  },
+  methods: {
+    toggleLogin: function() {
+      if (this.isLoggedIn == true) {
+        this.isLoggedIn = false
+      } else {
+        this.isLoggedIn = true
+      }
+    }
+  }
+
+}
+</script>
