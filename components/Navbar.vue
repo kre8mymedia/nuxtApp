@@ -20,7 +20,7 @@
       </ul>
       <ul v-if="isLoggedIn == false" class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a v-on:click="toggleLogin" class="nav-link">Login</a>
+          <a href="/login" class="nav-link">Login</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/register">Register</a>
@@ -44,6 +44,8 @@
 </template>
 
 <script>
+
+
 export default {
   data() {
     return {
@@ -52,11 +54,7 @@ export default {
   },
   methods: {
     toggleLogin: function() {
-      if (this.isLoggedIn == true) {
-        this.isLoggedIn = false
-      } else {
-        this.isLoggedIn = true
-      }
+      this.isLoggedIn = false
     }
   }
 
