@@ -1,14 +1,20 @@
 <template>
   <div class="px-0 container-fluid">
+    <!-- Navbar -->
     <Navbar :isLoggedin="isLoggedin"></Navbar>
+    <!-- END Navbar -->
+
+    <!-- MAIN CONTENT -->
     <div class="row justify-content-center">
       <div class="col-sm-4">
 
+        <!-- Header Stuff -->
         <div class="text-center">
           <img height="300px" src="~/assets/black-logo.png" alt="Adaptive Tech Logo">
           <h2>Retrieve Password</h2>
           <p>Please enter an email address<br>to send new password</p>
         </div>
+        <!-- END Header Stuff -->
 
         <!-- Retreival Email -->
         <div v-if="isLoggedin == false" class="pt-1 pb-1 container">
@@ -23,6 +29,8 @@
 
       </div>
     </div>
+    <!--END MAIN CONTENT -->
+
   </div>
 </template>
 
@@ -31,7 +39,7 @@ import Navbar from '../../components/Navbar';
 
 export default {
   components: {
-    Navbar,
+    Navbar
   },
   data() {
     return{
