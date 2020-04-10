@@ -51,7 +51,7 @@ export default {
   methods: {
     login() {
       if (this.email != "" && this.password != "") {
-        if (this.email == 'ryan.eggleston@tmgcore.com' && this.password == 'nixx1234') {
+        if (this.email == 'test@test.com' && this.password == 'test1234') {
           this.isLoggedin = true
           console.log(this.email, this.password)
         } else {
